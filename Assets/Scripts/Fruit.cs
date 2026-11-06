@@ -11,6 +11,7 @@ public class Fruit : MonoBehaviour
         {
             playerScore++;
             text.text = "Player Score:" + playerScore;
+            Destroy(gameObject);
         }
     }
 }
