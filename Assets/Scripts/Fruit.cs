@@ -1,9 +1,16 @@
+using TMPro;
 using UnityEngine;
 
 public class Fruit : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    [SerializeField] private TextMeshProUGUI text;
+    private int playerScore = 0;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if(collision.CompareTag("Player"))
+        {
+            playerScore++;
+            text.text = "Player Score:" + playerScore;
+        }
     }
 }
