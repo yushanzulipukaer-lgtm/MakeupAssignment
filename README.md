@@ -24,9 +24,10 @@ graph TD;
 # Factory Pattern
 ---
 ### Purpose
-<!-- Explain why the Factory pattern is appropriate for this particular system. -->
+ Seperate the function from the object itself and let the GameManager to control some functions.
 ### Implementation
-<!-- Describe how the Factory pattern is implemented in your project. -->
+ Created a interface first and let the factory to inherit. Created a factory script to set the instantiate location. Created and attached a spawner on the GameManager which doesn't care what is it spawning. We just need to 
+attach the object we want to spawn into the blank.
 ---
 # References
 ---
